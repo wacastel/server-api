@@ -11,7 +11,7 @@ router.post('/', function (req, res) {
     Car.create({
             make : req.body.make,
             model : req.body.model,
-            zero_to_sixty : req.body.zero_to_sixty,
+            accel : req.body.accel,
             year : req.body.year
         },
         function (err, car) {
